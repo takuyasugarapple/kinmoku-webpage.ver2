@@ -1,9 +1,9 @@
-(function($) {
+(function ($) {
 	"use strict"
 
 	///////////////////////////
 	// Preloader
-	$(window).on('load', function() {
+	$(window).on('load', function () {
 		$("#preloader").delay(600).fadeOut();
 	});
 
@@ -16,7 +16,7 @@
 
 	///////////////////////////
 	// Smooth scroll
-	$("#nav .main-nav a[href^='#']").on('click', function(e) {
+	$("#nav .main-nav a[href^='#']").on('click', function (e) {
 		e.preventDefault();
 		var hash = this.hash;
 		$('html, body').animate({
@@ -24,7 +24,7 @@
 		}, 600);
 	});
 
-	$('#back-to-top').on('click', function(){
+	$('#back-to-top').on('click', function () {
 		$('body,html').animate({
 			scrollTop: 0
 		}, 600);
@@ -32,19 +32,19 @@
 
 	///////////////////////////
 	// Btn nav collapse
-	$('#nav .nav-collapse').on('click', function() {
+	$('#nav .nav-collapse').on('click', function () {
 		$('#nav').toggleClass('open');
 	});
 
 	///////////////////////////
 	// Mobile dropdown
-	$('.has-dropdown a').on('click', function() {
+	$('.has-dropdown a').on('click', function () {
 		$(this).parent().toggleClass('open-drop');
 	});
 
 	///////////////////////////
 	// On Scroll
-	$(window).on('scroll', function() {
+	$(window).on('scroll', function () {
 		var wScroll = $(this).scrollTop();
 
 		// Fixed nav
@@ -64,28 +64,28 @@
 	///////////////////////////
 	// Owl Carousel
 	$('#about-slider').owlCarousel({
-		items:1,
-		loop:true,
-		margin:15,
+		items: 1,
+		loop: true,
+		margin: 15,
 		nav: true,
-		navText : ['<i class="uil uil-angle-left"></i>','<i class="uil uil-angle-right"></i>'],
-		dots : true,
-		autoplay : true,
+		navText: ['<i class="uil uil-angle-left"></i>', '<i class="uil uil-angle-right"></i>'],
+		dots: true,
+		autoplay: true,
 		animateOut: 'fadeOut'
 	});
 
 	$('#testimonial-slider').owlCarousel({
-		loop:true,
-		margin:15,
-		dots : true,
+		loop: true,
+		margin: 15,
+		dots: true,
 		nav: false,
-		autoplay : true,
-		responsive:{
+		autoplay: true,
+		responsive: {
 			0: {
-				items:1
+				items: 1
 			},
-			992:{
-				items:2
+			992: {
+				items: 2
 			}
 		}
 	});

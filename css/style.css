@@ -309,6 +309,7 @@ textarea:focus {
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
     padding: 0px 0px;
     background-color: #FFF !important;
     border-bottom: 1px solid #EEE;
@@ -1145,6 +1146,47 @@ header {
 .owl-theme .owl-nav [class*='owl-']:hover {
     opacity: 0.8;
     background: #4288FB;
+}
+
+
+
+/*------------------------------------*\
+	Blog
+\*------------------------------------*/
+
+.blog {
+    background-color: #FFF;
+    margin: 15px 0px;
+}
+
+.blog a{
+    width: 100%;
+}
+
+.blog-img img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog .blog-content {
+    padding: 20px 20px 40px;
+}
+
+.blog .blog-meta {
+    margin-bottom: 20px;
+}
+
+.blog .blog-meta li {
+    display: inline-block;
+    font-size: 14px;
+    color: #10161A;
+    margin-right: 10px;
+}
+
+.blog .blog-meta li i {
+    color: #4288FB;
+    margin-right: 5px;
 }
 
 
